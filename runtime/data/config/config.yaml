@@ -1,0 +1,13 @@
+---
+domain: rl
+descriptors:
+  - key: path
+    rate_limit:
+      unit: minute
+      requests_per_unit: 10
+    descriptors:
+      - key: cookie
+        rate_limit:
+          unit: minute
+          requests_per_unit: 3
+
